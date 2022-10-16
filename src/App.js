@@ -11,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/Avezika-Night-Club" element={<Home />} />
       </Routes>
       <Footer />
     </>

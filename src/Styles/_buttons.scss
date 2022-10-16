@@ -1,0 +1,89 @@
+.f-btn-1{
+    width: 240px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid $theme-2;
+    outline: none;
+    background: none;
+    color: $fff;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 300ms;
+
+    &:hover{
+        background-color: $theme-2;
+    }
+
+    .fa-chevron-right{
+        background-color: $theme-2;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:hover > .fa-chevron-right{
+        background-color: rgba(255,255,255,0.2);
+    }
+}
+
+.f-btn-1-filled{
+    width: 240px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid $theme-2;
+    outline: none;
+    background-color: $theme-2;
+    color: $fff;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 300ms;
+    
+    &:hover{
+        background: none;
+    }
+
+    .fa-chevron-right{
+        background-color: rgba(255,255,255,0.2);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:hover > .fa-chevron-right{
+        background-color: $theme-2;
+    }
+}
+
+.f-btn-2{
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
+    background-color: $theme-2;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: $fff;
+}
+
+.f-btn-3{
+    width: auto;
+    height: auto;
+    padding: 6px 30px;
+    background: none;
+    border: none;
+    outline: none;
+    color: $fff-50;
+    font-weight: 400;
+    
+    &:hover{
+        background-color: rgba(255,255,255,0.1);
+        color: $fff;
+
+    }
+}

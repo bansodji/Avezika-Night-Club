@@ -1,0 +1,25 @@
+.gallery{
+    column-count: 3;
+    column-width: 33%;
+
+    .pics{
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition: all 350ms ease;
+        
+        &:hover{
+            filter: opacity(0.5);
+        }
+    }
+}
+
+@media (max-width:992px){
+    .gallery{
+        column-count: 2;
+    }
+}
+@media (max-width:480px){
+    .gallery{
+        column-count: 1;
+    }
+}

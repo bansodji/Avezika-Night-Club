@@ -1,0 +1,27 @@
+.t-box{
+    position: relative;
+}
+
+.t-box .text-container{
+    background-color: $theme-4;
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    
+    // .img-container{
+    //     position: absolute;
+    // }
+}
+
+@media(max-width: 500px){
+    .t-box .text-container{
+        width: 100%;
+    }
+}
+
+.bg-1a{background-color: $theme-1a;}
+.bg-1b{background-color: $theme-1b;}

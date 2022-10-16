@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+@import "./Styles/_ipsit";
+
+body {
+    background-color: $theme-1 !important;
+    width: 100%;
+    // height: auto;
+    // overflow-x: hidden;
+}
+
+.hover-fff {
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+.border-white {
+    border: 1px solid #fff;
+}
+
+.glassy-bg-fff {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.glassy-bg-000 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-shadow {
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+}
+
+header {
+    background: linear-gradient(45deg, $theme-1a, $theme-1a, $theme-2a), url("./Images/Hero/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:768px) {
+    .hero {
+        padding-top: 22rem;
+    }
+}
+
+p {
+    font-weight: 200;
+}
+
+.hero-spacing {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+@media (max-width:993px) {
+    .hero-spacing {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.about-bg {
+    background: linear-gradient(45deg, $theme-2a, $theme-1a, $theme-1a), url('./Images/about.jpg');
+    background-repeat: no-repeat;
+}
+
+.hover-shadow {
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.7s;
+    background-color: $theme-1a;
+}
+
+.box:hover > .hover-shadow {
+    clip-path: circle(100%);
+}
+
+.hover-color-2:hover{
+    color: $theme-2 !important;
+}
+
+.services-box:hover{
+    background-color: $theme-2 !important;
+}
+
+.services-box:hover > .services-icon{
+    color: $fff !important;
+}
+
+.event-bg{
+    background: linear-gradient(45deg, $theme-1a,$theme-1a,$theme-2a), url('./Images/event-bg.jpeg');
+    background-position: top;
+    background-size: cover;
+}
+
+.entrance-price-box{
+    width: 10rem;
+    height: 10rem;
+    background-color: $theme-2;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-bg{
+    background: linear-gradient(45deg, $theme-1a,$theme-1a,$theme-2a), url('./Images/testimonials-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}

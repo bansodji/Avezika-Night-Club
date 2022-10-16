@@ -1,0 +1,19 @@
+#mob-navBrand{
+    display: none;
+}
+
+#navBrand{
+    display: block;
+}
+
+@media (max-width:993px){
+    #mob-navBrand{
+        display: block;
+    }
+    #navBrand{
+        display: none;
+    }
+    #navSocioIcon{
+        display: none !important;
+    }
+}

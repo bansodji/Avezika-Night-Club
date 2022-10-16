@@ -1,0 +1,89 @@
+.f-border-top-30 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 25%;
+        border: 3px solid #fff;
+        margin-top: -60px;
+    }
+}
+
+.f-border-bottom-fff-50 {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border-bottom: 1px solid $fff-50;
+        bottom: -10px;
+    }
+}
+
+@keyframes travell-to-right {
+    from {
+        width: 5%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.underline-fff-50-bold {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border-bottom: 3px solid $fff-50;
+        bottom: -10px;
+    }
+
+    &:hover {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 3px solid $fff;
+            bottom: -10px;
+            animation-name: travell-to-right;
+            animation-duration: 0.5s;
+        }
+    }
+
+    &:hover > .redirect-arrow{
+        margin-left: 1rem !important;
+        font-size: 2rem;
+        transition: 200ms;
+    }
+}
+
+.small-underline-bottom-fff{
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 30%;
+        border-bottom: 5px solid $fff;
+        bottom: 0;
+    }
+}
+
+
+
+
+// ==========================Border===================================
+
+.border-muted {
+    border-color: rgba(255, 255, 255, 0.131) !important;
+}
+
+.border-wide{
+    border: 15px solid $theme-2;
+}

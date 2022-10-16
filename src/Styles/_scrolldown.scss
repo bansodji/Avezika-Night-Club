@@ -1,0 +1,62 @@
+@keyframes scroll-down {
+   0%{
+    top: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+   10%{
+    top: 10%;
+    transform: translate(-50%, -10%);
+   }
+
+   20%{
+    top: 10%;
+    transform: translate(-50%, -10%);
+   }
+
+   30%{
+    top: 90%;
+    transform: translate(-50%, -90%);
+   }
+
+   50%{
+    top: 50%;
+    transform: translate(-50%, -50%);
+   }
+   
+   100%{
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 1s;
+   }
+
+}
+
+.scroll-down-circle {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: $theme-1;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+
+    .down-arrow {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: scroll-down;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 993px){
+    .scroll-down-circle{display: none;}
+}
